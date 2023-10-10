@@ -13,7 +13,7 @@ def get_word():
         # ⬇️ to show word during testing
         # the_word_label = tk.Label(window, text=f"the word is: {the_word.lower()}", fg="DeepPink2", bg="gray21")
         # the_word_label.grid(row=0, column=0, columnspan=5, pady=10)
-        instructions = tk.Label(window, text="please enter your word:\n", fg="DeepPink2" bg="gray21", pady=10)
+        instructions = tk.Label(window, text="please enter your word:\n", font=("Times", 15), fg="DeepPink2", bg="gray21", pady=10)
         instructions.grid(row=0, column=0, columnspan=5)
         word_list = [x.lower() for x in the_word]
         word_list.remove('\n')
